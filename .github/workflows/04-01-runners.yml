@@ -13,3 +13,7 @@ jobs:
     runs-on: mac-latest
     steps:
         - run: echo "Hello World"
+  my-fourth-job:
+    runs-on: self-hosted
+    steps:
+        - run: echo "Hello World"
