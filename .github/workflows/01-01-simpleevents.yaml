@@ -1,6 +1,9 @@
 name: 01-01-simpleevents
 # on: push -> event tirgger
-on: workflow_dispatch
+# on: workflow_dispatch
+on: 
+  schedule:
+    - cron: '*/5 * * * *'
 jobs: 
   my-first-job:
     runs-on: ubuntu-latest
