@@ -1,5 +1,5 @@
 name: 04-01-runners
-on: push # event tirgger
+on: workflow_dispatch # event tirgger
 jobs: 
   my-first-job:
     runs-on: ubuntu-latest
