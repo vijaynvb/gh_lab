@@ -1,7 +1,7 @@
 name: 07-01-context 
 
 on: workflow_dispatch
-run-name: "07-01-context ${{   github.run_id}}"
+run-name: "07-01-context ${{ github.run_number}}"
 
 jobs:
   build:
