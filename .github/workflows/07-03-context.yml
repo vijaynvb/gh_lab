@@ -4,8 +4,17 @@ on:
   workflow_dispatch:
     inputs: 
       myinput:
-        type: string 
+        type: choice 
         description: enter your name
+        options: 
+          - monalisa
+          - cschleiden
+      message:
+        required: true
+      use-emoji:
+        type: boolean
+        description: Include 🎉🤣 emojis
+    
         #default: vijay
 
 
