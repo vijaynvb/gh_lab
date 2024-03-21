@@ -1,0 +1,15 @@
+name: 07-05-context 
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display Event Information
+        id: mystep1
+        run: |
+          echo $GITHUB_OUTPUT 
+          echo "greeting=hello world" >> $GITHUB_OUTPUT
+      - name: Display Event Information
+        run: echo "hello world" ${{ steps.mystep1.outputs.greeting }}
