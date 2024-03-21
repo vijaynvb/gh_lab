@@ -5,6 +5,7 @@ on:
     inputs: 
       myinput:
         type: string 
+        description: enter your name
         #default: vijay
 
 
