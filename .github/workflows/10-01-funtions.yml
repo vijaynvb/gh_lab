@@ -8,7 +8,6 @@ jobs:
       - name: step 1
         run: |
           echo "Hello World"
-          exit 1
       - name: step 2
         if: ${{ always() }}
         run: echo "always"
