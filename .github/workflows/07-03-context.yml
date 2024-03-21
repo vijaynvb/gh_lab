@@ -14,7 +14,6 @@ on:
       use-emoji:
         type: boolean
         description: Include 🎉🤣 emojis
-    
         #default: vijay
 
 
@@ -24,3 +23,5 @@ jobs:
     steps:
      - name: Display Event Information 
        run: echo helloworld ${{ inputs.myinput}}
+     - name: testing 
+       run:  ${{ inputs.message }}
