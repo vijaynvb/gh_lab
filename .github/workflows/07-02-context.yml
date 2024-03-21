@@ -1,0 +1,21 @@
+name: 07-02-context 
+
+on: workflow_dispatch
+env: 
+    MY_VAR_1: value1
+    MY_VAR_2: Value2
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+     - name: Display Event Information 
+       env: 
+         MY_VAR_1: my step value
+         MY_STEP_ENV_VAR: my step value
+       run: |
+          echo "Hello global env: ${{ env.MY_VAR_1 }}"
+          echo "Hello local env:  ${{ env.MY_STEP_ENV_VAR }}"
+     - name: Display Event Information 
+       run: |
+          echo "Hello global env: ${{ env.MY_VAR_1 }}"
+        #echo "Hello local env:  ${{ env.MY_STEP_ENV_VAR }}"
