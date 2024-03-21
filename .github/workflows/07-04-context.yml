@@ -2,10 +2,10 @@ name: 07-04-context
 
 on: workflow_dispatch
 env:
-    lacalenvvar: ${{ vars.test.TEST_ENV_REPO }}
+    localenvvar: ${{ vars.TEST_ENV_REPO }}
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
      - name: Display Event Information
-       run: echo "hello world ${{ env.lacalenvvar }}"
+       run: echo "hello world ${{ env.localenvvar }}"
