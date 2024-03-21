@@ -13,4 +13,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name: Display Event Information 
-       run: echo helloworld
+       run: echo helloworld ${{ inputs.myinput}}
