@@ -28,7 +28,7 @@ jobs:
         - name: Download web-app content
           uses: actions/download-artifact@v4
           with:
-            name: my-artifact
+            name: todo-artifact
             path: target/
                
         - name: Archive site content
