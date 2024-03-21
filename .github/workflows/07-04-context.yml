@@ -6,7 +6,7 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
-    environment: test
+    environment: prod
     steps:
      - name: Display Event Information
        run: echo "hello world ${{ env.localenvvar }}"
