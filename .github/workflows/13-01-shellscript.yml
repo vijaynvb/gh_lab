@@ -5,6 +5,7 @@ jobs:
   my-first-job:
     runs-on: ubuntu-latest
     steps:
-      - run: |
-       chmod +x ./init.sh
-       ./init.sh
+      - name: "my step"
+        run: |
+         chmod +x ./init.sh
+         ./init.sh
