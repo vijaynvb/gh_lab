@@ -1,0 +1,10 @@
+name: 14-01-shellscript
+on: workflow_dispatch
+
+jobs: 
+  my-first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+       chmod +x ./init.sh
+       ./init.sh
